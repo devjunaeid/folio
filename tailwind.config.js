@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        "sm": "480px"
+      }
+    },
+    fontFamily:{
+      dosis: ['Dosis', 'sans-serif'],
+      sara: ['Sarabun', 'sans-serif'],
+      arimo: [ 'Arimo', 'sans-serif']
+    }
   },
   plugins: [],
 }
