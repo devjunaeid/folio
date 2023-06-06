@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@300;400;600;700;800&family=Sarabun:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@300;400;600;700;800&family=Sarabun:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Junaeid</title>
-</head>
-<body class="font-sara">
+  </head>
+  <body class="h-screen font-sara">
     <!-- intro section -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-b from-yellow-200">
-        <!-- nav bar -->
-        <nav>
-
-        </nav>
-        <!-- intro content -->
-        <div>
+    <div class="h-1/2 mx-auto lg:h-screen bg-gradient-to-b from-yellow-200">
+      <!-- nav bar -->
+      <nav class="fixed top-0 w-full mx-auto bg-yellow-200">
+        <div class="continer py-5 flex flex-wrap justify-between items-center">
+          <div>
+            <img
+              class="h-12 w-36 lg:h-25 lg:w-75 ml-7"
+              src="./img/logo.png"
+              alt="Logo"
+            />
+          </div>
+          <div
+            class="font-dosis text-gray-600 text-xl items-center font-bold mr-10 uppercase"
+          >
+            <ul class="hidden md:flex md:gap-10 items-center">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Hambarger section -->
+          <div class="items-center md:hidden">
+            <img class="mr-7" src="./img/hamburger-menu.png" alt="Menu" />
+          </div>
+          <div
+            class="hidden absolute top-0 left-0 w-full p-10 rounded-b-3xl bg-yellow-400 text-gray-700"
+          >
+            <ul
+              class="space-y-5 items-center font-dosis font-bold text-2xl text-center"
+            >
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+              </li>
+            </ul>
+            <div class="flex justify-center" >
+                <img src="./img/cancel.png" alt="exit">
+          </div>
+            </div>
         </div>
+      </nav>
+      <!-- intro content -->
+      <div class=""></div>
     </div>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
