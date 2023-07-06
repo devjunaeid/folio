@@ -5,12 +5,14 @@ module.exports = {
     extend: {
       screens:{
         "sm": "480px"
-      }
+      },
     },
     fontFamily:{
       dosis: ['Dosis', 'sans-serif'],
       sara: ['Sarabun', 'sans-serif'],
-      arimo: [ 'Arimo', 'sans-serif']
+      arimo: [ 'Arimo', 'sans-serif'],
+      nunito: ['Nunito Sans', 'sans-serif'],
+      lato: ['Lato', 'sans-serif']
     }
   },
   plugins: [],

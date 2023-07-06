@@ -11,72 +11,110 @@
       href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@300;400;600;700;800&family=Sarabun:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;0,1000;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Junaeid</title>
   </head>
-  <body class="h-screen font-sara">
+  <body class="h-screen font-sara min-w-[20%]">
     <!-- intro section -->
-    <div class="h-1/2 mx-auto lg:h-screen bg-gradient-to-b from-yellow-200">
-      <!-- nav bar -->
-      <nav class="fixed top-0 w-full mx-auto bg-yellow-200">
-        <div class="continer py-5 flex flex-wrap justify-between items-center">
-          <div>
-            <img
-              class="h-12 w-36 lg:h-25 lg:w-75 ml-7"
-              src="./img/logo.png"
-              alt="Logo"
-            />
-          </div>
-          <div
-            class="font-dosis text-gray-600 text-xl items-center font-bold mr-10 uppercase"
-          >
-            <ul class="hidden md:flex md:gap-10 items-center">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Hambarger section -->
-          <div class="items-center md:hidden">
-            <img class="mr-7" src="./img/hamburger-menu.png" alt="Menu" />
-          </div>
-          <div
-            class="hidden absolute top-0 left-0 w-full p-10 rounded-b-3xl bg-yellow-400 text-gray-700"
-          >
-            <ul
-              class="space-y-5 items-center font-dosis font-bold text-2xl text-center"
-            >
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Projects</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-              </li>
-            </ul>
-            <div class="flex justify-center" >
-                <img src="./img/cancel.png" alt="exit">
-          </div>
-            </div>
+    <!-- nav bar -->
+    <nav class="fixed top-0 w-full mx-auto bg-gray-200">
+      <div class="continer py-5 flex flex-wrap justify-between items-center">
+        <div>
+          <img
+            class="h-12 w-36 lg:h-25 lg:w-75 ml-7"
+            src="./img/logo.png"
+            alt="Logo"
+          />
         </div>
-      </nav>
+        <div
+          class="font-lato text-gray-900 text-xl items-center font-bold mr-10 uppercase"
+        >
+          <ul class="hidden md:flex md:gap-10 items-center">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Hambarger section -->
+        <div class="items-center md:hidden z-20">
+          <img
+            id="hamMenu"
+            class="mr-7 cursor-pointer"
+            src="./img/hamburger-menu.png"
+            alt="Menu"
+          />
+        </div>
+        <div
+          id="dropMenu"
+          class="hidden md:hidden relative top-0 left-0 justify-center w-screen p-0 border-none rounded-3xl bg-gray-300 text-gray-900 mx-7"
+        >
+          <ul
+            class="space-y-5 p-10 items-center font-dosis font-bold text-2xl text-center justify-center"
+          >
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <div class="flex justify-center">
+                <img src="./img/cancel.png" alt="exit" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="h-1/2 md:h-3/4 lg:h-screen mx-auto bg-gray-200"
+    >
       <!-- intro content -->
-      <div class=""></div>
+      <!-- Profile Image -->
+      <div class="flex justify-center flex-wrap">
+        <img
+          class="rounded-full w-36 h-36 mt-24 md:w-48 md:h-48 md:mt-36 lg:w-64 lg:h-64 lg:mt-40"
+          src="./img/profile.jpg"
+          alt="profile picture"
+        />
+      </div>
+      <!-- Greetings -->
+      <div class="flex flex-row justify-center items-center my-2">
+        <span class="font-lato font-bold text-transparent text-3xl md:font-extrabold md:text-7xl bg-clip-text bg-gradient-to-bl from-gray-400 via-gray-600 to-gray-800">Hi, I'm Junaeid</span>
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand%20Dark%20Skin%20Tone.png" alt="Waving Hand" class="w-12 h-12 ml-1 pb-2 md:w-20 md:h-20"/>
+      </div>
+      <!-- Introduction -->
+      <div class="m-auto flex justify-center px-2 text-center text-xl font-light md:text-2xl md:font-normal md:min-w-2xl md:max-w-3xl md:mt-7 lg:max-w-4xl lg:mt-12">
+        <span>Passionate and dedicated CS graduate with a versatile skill set in programming and problem-solving. Experienced in <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">web development</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Deep Learning</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Computer Vision</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Docker</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Linux</span> and collaboration tools.</span> 
+      </div>
+      <div class="hidden md:font-semibold md:mt-5 md:text-xl md:flex md:justify-center lg:mt-24 lg:text-2xl">
+        <button class="text-gray-900 bg-gradient-to-bl from-gray-200 to-gray-400 md:p-3 lg:p-5 rounded-lg">Get in Touch</button>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div class="flex justify-center mt-4">
+      <h2 class="text-4xl text-gray-900">About Me</h2>
+      <p class="min-w-4xl text-center">
+        
+      </p>
     </div>
     <script src="./app.js"></script>
   </body>
