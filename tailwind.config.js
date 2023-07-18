@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./index.html"],
   theme: {
+    screens:{
+      'sm': '460px',
+      'md': '760px',
+      'lg': '1200px'
+    },
     extend: {
       screens:{
         "sm": "480px"
