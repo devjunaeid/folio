@@ -20,7 +20,7 @@
   <body class="h-screen font-sara min-w-[20%]">
     <!-- intro section -->
     <!-- nav bar -->
-    <nav class="fixed top-0 w-full mx-auto bg-gray-200">
+    <nav class="fixed top-0 w-full mx-auto bg-pink-100">
       <div class="continer py-5 flex flex-wrap justify-between items-center">
         <div>
           <img
@@ -58,7 +58,7 @@
         </div>
         <div
           id="dropMenu"
-          class="hidden md:hidden relative top-0 left-0 justify-center w-screen p-0 border-none rounded-3xl bg-gray-300 text-gray-900 mx-7"
+          class="hidden md:hidden relative top-0 left-0 justify-center w-screen p-0 border-2 border-black rounded-3xl bg-pink-100 text-gray-900 mx-7"
         >
           <ul
             class="space-y-5 p-10 items-center font-dosis font-bold text-2xl text-center justify-center"
@@ -84,37 +84,105 @@
         </div>
       </div>
     </nav>
-    <div
-      class="flex flex-wrap flex-col overflow-scroll mx-auto bg-gray-200 lg:flex-nowrap"
-    >
-      <!-- intro content -->
-      <!-- Profile Image -->
-      <div class="flex justify-center flex-wrap">
-        <img
-          class="rounded-full w-36 h-36 mt-24 md:w-48 md:h-48 md:mt-32 lg:w-64 lg:h-64 lg:mt-36"
-          src="./img/profile.jpg"
-          alt="profile picture"
-        />
-      </div>
-      <!-- Greetings -->
-      <div class="flex flex-row justify-center items-center mt-2">
-        <span class="font-lato font-bold text-transparent text-3xl md:font-extrabold md:text-7xl bg-clip-text bg-gradient-to-bl from-gray-400 via-gray-600 to-gray-800">Hi, I'm Junaeid</span>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand%20Dark%20Skin%20Tone.png" alt="Waving Hand" class="w-12 h-12 ml-1 pb-2 md:w-20 md:h-20"/>
-      </div>
-      <!-- Introduction -->
-      <div class="mx-auto flex justify-center p-5 text-center text-[1rem] font-light md:text-2xl md:font-normal md:min-w-2xl md:max-w-3xl md:mt-7 lg:max-w-4xl lg:mt-12">
-        <span>Passionate and dedicated CS graduate with a versatile skill set in programming and problem-solving. Experienced in <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Web Development</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Deep Learning</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Computer Vision</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Docker</span>, <span class="text-[22px] font-semibold text-gray-700 md:text-3xl">Linux</span> and collaboration tools.</span> 
-      </div>
-      <div class="hidden md:flex md:mx-auto md:justify-center md:font-semibold md:my-12">
-        <button class="text-gray-900 bg-gradient-to-bl from-gray-200 to-gray-400 md:p-3 lg:p-5 rounded-lg">Get in Touch</button>
-      </div>
-    </div>
-    <!-- About Section -->
-    <div class="flex justify-center mt-3">
-      <h2 class="text-3xl text-gray-700 underline underline-offset-4 md:underline-offset-8 md:text-5xl md:mt-5">About Me</h2>
-      <p class="min-w-4xl text-center">
-        
-      </p>
+    <div class="h-screen w-screen overflow-y-scroll snap-y snap-mandatory">
+      <section
+        class="lg:flex lg:w-screen lg:h-screen lg:align-middle lg:justify-center lg:mx-auto lg:snap-start"
+      >
+        <div
+          class="flex flex-wrap flex-col my-0 mx-auto bg-pink-100 h-screen overflow-auto lg:w-screen lg:flex-nowrap"
+        >
+          <!-- intro content -->
+          <!-- Profile Image -->
+          <div class="flex justify-center flex-wrap">
+            <img
+              class="rounded-full border-2 border-black w-36 h-36 mt-24 md:w-48 md:h-48 md:mt-32"
+              src="./img/profile.jpg"
+              alt="profile picture"
+            />
+          </div>
+          <!-- Greetings -->
+          <div class="flex flex-row justify-center items-center mt-2">
+            <span class="font-lato font-bold text-3xl text-black"
+              >Hi, I'm Junaeid</span
+            >
+            <img
+              src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand%20Dark%20Skin%20Tone.png"
+              alt="Waving Hand"
+              class="w-12 h-12 ml-1 pb-2 md:w-20 md:h-20"
+            />
+          </div>
+          <!-- Introduction -->
+          <div
+            class="flex flex-col justify-center items-center text-center align-middle mx-auto mt-10"
+          >
+            <div
+              class="font-lato font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-bl from-gray-700 via-gray-900 to-gray-700"
+            >
+              <p>Developer</p>
+            </div>
+            <div><img src="./img/down-arrow.png" alt="" /></div>
+            <div
+              class="font-lato font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-bl from-gray-700 via-gray-900 to-gray-700"
+            >
+              <p>Problem Solver</p>
+            </div>
+            <div><img src="./img/down-arrow.png" alt="" /></div>
+            <div
+              class="font-lato font-extrabold text-5xl text-transparent bg-clip-text bg-gradient-to-bl from-gray-700 via-gray-900 to-gray-700"
+            >
+              <p>Machine Learning and DavOps Enthusiast</p>
+            </div>
+          </div>
+          <div class="flex mx-auto justify-center md:font-semibold">
+            <a
+              class="text-gray-900 text-lg font-bold bg-pink-300 bg-opacity-30 p-3 mt-14 md:my-10 lg:p-5 rounded-lg"
+              href="#contact"
+            >
+              Get in Touch
+            </a>
+            <a
+              class="hidden text-gray-900 text-lg font-bold bg-pink-300 bg-opacity-25 md:mx-16 md:flex md:p-3 md:my-10 lg:p-5 rounded-lg"
+              href="#aboutMe"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section
+        class="lg:flex lg:w-screen lg:h-screen lg:align-middle lg:justify-center lg:mx-auto lg:snap-start"
+      >
+        <div
+          class="flex flex-col justify-center bg-pink-200 bg-opacity-50 lg:w-screen lg:mx-auto"
+          id="aboutMe"
+        >
+          <h2
+            class="mx-auto text-3xl text-gray-950 underline underline-offset-4 md:underline-offset-8 md:text-5xl md:mt-5"
+          >
+            About Me
+          </h2>
+          <div class="mx-auto">
+            <p
+              class="mx-5 my-5 p-3 max-w-3xl bg-pink-500 rounded-lg bg-opacity-10 md:p-6 text-lg font-thin text-justify md:font-light md:mt-8 md:min-w-3xl md:max-w-5xl lg:text-3xl lg:max-w-6xl"
+            >
+              Hay there, this is Thamid Juaneid. A freshly graduated Computer
+              Science Engingeer from Bangladesh. I have completed my
+              BSc.(Bechalor of Science) in CSE(Computer Science and
+              Engingeering) this year from Green University of Bangladesh.
+              Through my academic journey, I've acquired a versatile skill like
+              having proficiency in programming language like Python, Java,
+              JavaScript, HTML, CSS, Bash etc. I've keen interest in ML
+              specifically in Computer Vision and Data Science. I'm also
+              fimilier with Docker, Linux, version controling tools. I
+              continuously seeks to stay ahead of industry trends, drive
+              innovation, and make a positive impact in transformative software
+              development projects. Ready to contribute and excel within a
+              dynamic team.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="./app.js"></script>
   </body>
